@@ -15,6 +15,7 @@
         - djangorestframework
   - name: Iniciando projeto 
     shell: '. /home/ubuntu/estudo/venv/bin/activate; django-admin startproject setup /home/ubuntu/estudo'
+    ignore_errors: yes
   - name: Alterando o hosts do settings
     lineinfile:
       path: /home/ubuntu/estudo/setup/settings.py
